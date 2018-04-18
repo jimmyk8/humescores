@@ -1,3 +1,7 @@
+/* to change to a different theme in this project, change the 'themename' 
+ * and the address that the 'proxy' points to.
+ */
+
 var themename = 'humescores';
 
 var gulp = require('gulp'),
@@ -58,7 +62,7 @@ gulp.task('javascript', function() {
 gulp.task('watch', function() {
 	browserSync.init({ 
 		open: 'external',
-		proxy: 'humescores.dev',
+		proxy: 'http://humescores.dev.cc/',
 		port: 8080
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
