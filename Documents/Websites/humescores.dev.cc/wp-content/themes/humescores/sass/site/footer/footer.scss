@@ -1,0 +1,55 @@
+.site-footer, .site-info {
+	position: relative;
+	padding: 1em;
+	font-family: $font__sans;
+	color: #fff;
+	background-color: $color__skin;
+	text-align: center;
+	
+	@media screen and (min-width: $query__small) {
+		padding: 1em 2em;
+	}
+}
+
+.social-menu {
+	ul {
+		display: flex;
+		justify-content: center;
+		list-style-type: none;
+		margin: 1em 0;
+		padding: 7px;
+		background-color: lightgrey;
+                box-shadow: inset 3px 5px 3px 2px grey;
+		a {
+			display: block;
+			padding: .5em 2em;
+			color: #000;
+			text-decoration: none;
+			
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.menu-item-1849 {
+    background-image: url(./images/twitter.svg);
+    background-repeat: no-repeat;
+}
+
+.menu-item-1820 {
+    background-image: url(./images/facebook.svg);
+    background-repeat: no-repeat;
+}
+
+.menu-item-1821 {
+    background-image: url(./images/linkedin.svg);
+    background-repeat: no-repeat;
+}
+
+.menu-item-1822 {
+    background-image: url(./images/instagram.svg);
+    background-repeat: no-repeat;
+}
