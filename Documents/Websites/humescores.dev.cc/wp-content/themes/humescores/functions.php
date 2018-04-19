@@ -73,7 +73,10 @@ function humescores_setup() {
             'width' => 90,
             'height' => 100,
             'flex-width' == true,
-            ));
+        ));
+        
+        /* Editor Styles */
+        add_editor_style( array( 'inc/editor-styles.css', humescores_fonts_url() ) );
 }
 endif;
 add_action( 'after_setup_theme', 'humescores_setup' );
